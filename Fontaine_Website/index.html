@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the webpage -->
+    <title>Genshin Impact: Adventures in Fontaine</title>
+    
+    <!-- Icon for the webpage -->
+    <link rel="icon" href="styles/icons/paimon/website_icon.png">
+    
+    <!-- Bootstrap CSS for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS styles -->
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+    <!-- Vue.js library -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <!-- Vue Router for SPA navigation -->
+    <script src="https://unpkg.com/vue-router@4/dist/vue-router.global.js"></script>
+</head>
+<body>
+    <!-- Curtain elements -->
+    <div id="left-curtain"></div>
+    <div id="right-curtain"></div>
+    
+    <!-- Main Vue.js application container -->
+    <div id="app">
+        <!-- Navbar component -->
+        <navbar-component></navbar-component>
+        
+        <!-- Router view for dynamic component rendering based on route -->
+        <router-view></router-view>
+        
+        <!-- Footer component -->
+        <footer-component></footer-component>
+    </div>
+    
+    <!-- Bootstrap JavaScript bundle for functionality such as modals, carousels, etc. -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Main application script -->
+    <script type="module" src="js/app.js"></script>
+    
+    <!-- AOS (Animate On Scroll) library for scroll animations -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initializing animations on scroll
+    </script>
+</body>
+</html>
